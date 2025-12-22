@@ -541,4 +541,22 @@ client.on(Events.InteractionCreate, async interaction => {
     }
 });
 
+// Servidor HTTP para Render (requiere puerto)
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+    res.send('🚀 Eternal Shop Bot está online!');
+});
+
+app.listen(PORT, () => {
+    console.log(`🌐 Servidor HTTP corriendo en puerto ${PORT}`);
+});
+
+// Auto-ping para mantener activo en Render
+setInterval(() => {
+    console.log('🔄 Manteniendo bot activo...');
+}, 10 * 60 * 1000); // Cada 10 minutos
+
 client.login(process.env.DISCORD_TOKEN);
