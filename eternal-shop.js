@@ -283,7 +283,7 @@ client.on(Events.InteractionCreate, async interaction => {
 // Mantener activo
 setInterval(() => {
     console.log('🔄 Bot activo - ' + new Date().toLocaleTimeString());
-}, 5 * 60 * 1000); // Cada 5 minutos
+}, 5 * 60 * 1000);
 
 // Iniciar bot
 client.login(process.env.DISCORD_TOKEN);
