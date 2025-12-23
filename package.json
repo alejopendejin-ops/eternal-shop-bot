@@ -1,16 +1,10 @@
 {
   "name": "eternal-shop",
   "version": "1.0.0",
-  "description": "Eternal Shop - Bot completo para Discord con tickets, exchange y moderación",
   "main": "eternal-shop.js",
   "scripts": {
-    "start": "node eternal-shop.js",
-    "dev": "node --watch eternal-shop.js",
-    "build": "npm install"
+    "start": "node eternal-shop.js"
   },
-  "keywords": ["discord", "bot", "tickets", "eternal", "shop", "exchange", "moderacion"],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "discord.js": "^14.14.1",
     "dotenv": "^16.3.1",
